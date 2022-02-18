@@ -19,6 +19,7 @@ module load python/3.9.7
 ## GPU compilation
 `cmake ../ -DENABLE_CUDA=ON`
 
+## Class diagram doodle
 ```mermaid
 classDiagram
 MatrixBase <|--SerialDenseMatrix
