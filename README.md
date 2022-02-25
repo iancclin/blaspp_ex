@@ -14,10 +14,10 @@ module load python/3.9.7
 ```
 
 ## CPU compilation
-`cmake ../ -DENABLE_CUDA=OFF`
+`cmake ../ -DCMAKE_C_COMPILER=mpicc -DCMAKE_CXX_COMPILER=mpicxx -DENABLE_CUDA=OFF`
 
 ## GPU compilation
-`cmake ../ -DENABLE_CUDA=ON`
+`cmake ../ -DCMAKE_C_COMPILER=mpicc -DCMAKE_CXX_COMPILER=mpicxx -DENABLE_CUDA=ON`
 
 ## Class diagram doodle
 ```mermaid
